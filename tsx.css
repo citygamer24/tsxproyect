@@ -1,0 +1,33 @@
+/* Estilo para la pantalla de bienvenida */
+#intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2e3b4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Mueve la pantalla de bienvenida fuera de la vista */
+  #intro-screen.slide-out {
+    transform: translateX(-100%);
+  }
+  
+  /* Estilo para el contenido principal */
+  #main-content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 20px;
+  }
+  
+  /* Aparece el contenido principal después del deslizamiento */
+  #main-content.show {
+    opacity: 1;
+  }
+  
